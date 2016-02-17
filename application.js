@@ -5,7 +5,7 @@ var cors = require('cors');
 
 // list the endpoints which you want to make securable here
 var securableEndpoints;
-securableEndpoints = ['/hello', '/bettercallsaul'];
+securableEndpoints = ['/hello', '/bettercallsaul', 'getquestions'];
 
 var app = express();
 
@@ -24,6 +24,7 @@ app.use(mbaasExpress.fhmiddleware());
 
 app.use('/hello', require('./lib/hello.js')());
 app.use('/bettercallsaul', require ('./lib/bettercallsaul.js')());
+app.use('/getquestions', require ('./lib/getquestions.js')());
 
 // Important that this is last!
 app.use(mbaasExpress.errorHandler());
