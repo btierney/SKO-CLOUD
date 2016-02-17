@@ -37,7 +37,7 @@ This is a blank 'hello world' FeedHenry MBaaS. Use it as a starting point for bu
 + Request (application/json)
     + Body
             {
-              query : ""
+               "query" : ""
             }
 
 + Response 200 (application/json)
