@@ -4,22 +4,25 @@ This is a blank 'hello world' FeedHenry MBaaS. Use it as a starting point for bu
 
 # Group Hello World API
 
-# hello [/hello]
+# bettercallsaul [/bettercallsaul]
 
-'Hello world' endpoint.
+'Better Call Saul' endpoint.
 
-## hello [POST] 
+## bettercallsaul [POST] 
 
-'Hello world' endpoint.
+'Better Call Saul' endpoint.
 
 + Request (application/json)
     + Body
             {
-              "hello": "world"
+              "email"   : "foo@blah.com",
+              "region"  : "Other",
+              "answers" : "1,2,3,4,5,6,7,8,9,1",
+              "score"   : 10
             }
 
 + Response 200 (application/json)
     + Body
             {
-              "msg": "Hello world"
+              "msg": "Thanks for playing!"
             }
