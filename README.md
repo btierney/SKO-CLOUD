@@ -2,7 +2,7 @@
 
 This is a blank 'hello world' FeedHenry MBaaS. Use it as a starting point for building your APIs. 
 
-# Group Hello World API
+# Group SKO Project API
 
 # bettercallsaul [/bettercallsaul]
 
@@ -25,4 +25,23 @@ This is a blank 'hello world' FeedHenry MBaaS. Use it as a starting point for bu
     + Body
             {
               "msg": "Thanks for playing!"
+            }
+# getquestions [/getquestions]
+
+'Get Questions' endpoint.
+
+## getquestions [POST] 
+
+'Get Questions' endpoint.
+
++ Request (application/json)
+    + Body
+            {
+              query : ""
+            }
+
++ Response 200 (application/json)
+    + Body
+            {
+              "msg": ""
             }
