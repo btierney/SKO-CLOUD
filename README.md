@@ -45,3 +45,23 @@ This is a blank 'hello world' FeedHenry MBaaS. Use it as a starting point for bu
             {
               "msg": ""
             }
+
+# verifyemail [/verifyemail]
+
+'Verify Email' endpoint.
+
+## verifyemail [POST]
+
+'Verify Email' endpoint
+
++ Request (application/json)
+    + Body
+            {
+                "query" : "foo@blah.com"
+            }
+
++ Response 200 (application/json)
+    + Body
+           {
+                "msg: ""
+           }
