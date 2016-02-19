@@ -57,11 +57,11 @@ This is a blank 'hello world' FeedHenry MBaaS. Use it as a starting point for bu
 + Request (application/json)
     + Body
             {
-                "query" : "foo@blah.com"
+                "email" : "foo@blah.com"
             }
 
 + Response 200 (application/json)
     + Body
            {
-                "msg: ""
+                "count: ""
            }
