@@ -65,3 +65,21 @@ This is a blank 'hello world' FeedHenry MBaaS. Use it as a starting point for bu
            {
                 "count: ""
            }
+
+# getallscores [/getallscores]
+
+'Get all scores'
+
+## getallscores [POST]
+
++ Request (application/json)
+    + Body
+            {
+                "region" : "all"
+            }
+
++ Response 200 (application/json)
+    + Body
+           {
+                "results" : "data"
+           }
