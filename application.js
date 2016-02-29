@@ -26,6 +26,7 @@ app.use('/hello', require('./lib/hello.js')());
 app.use('/bettercallsaul', require ('./lib/bettercallsaul.js')());
 app.use('/getquestions', require ('./lib/getquestions.js')());
 app.use('/verifyemail', require ('./lib/verifyemail.js')());
+app.use('/getallscores', require('./lib/getallscores.js')());
 
 // Important that this is last!
 app.use(mbaasExpress.errorHandler());
