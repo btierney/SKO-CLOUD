@@ -83,3 +83,20 @@ This is a blank 'hello world' FeedHenry MBaaS. Use it as a starting point for bu
            {
                 "results" : "data"
            }
+# regions [/regions]
+
+'Get all regions'
+
+## regions [POST]
+
++ Request (application/json)
+    + Body
+            {
+                "region" : ""
+            }
+
++ Response 200 (application/json)
+    + Body
+           {
+                "results" : "data"
+           }           
