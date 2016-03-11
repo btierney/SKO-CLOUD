@@ -27,6 +27,7 @@ app.use('/bettercallsaul', require ('./lib/bettercallsaul.js')());
 app.use('/getquestions', require ('./lib/getquestions.js')());
 app.use('/verifyemail', require ('./lib/verifyemail.js')());
 app.use('/getallscores', require('./lib/getallscores.js')());
+app.use('/rollupscores', require('./lib/rollupscores.js')());
 app.use('/regions', require('./lib/regions.js')());
 
 // Important that this is last!
