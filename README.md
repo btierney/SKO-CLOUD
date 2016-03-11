@@ -83,6 +83,7 @@ This is a blank 'hello world' FeedHenry MBaaS. Use it as a starting point for bu
            {
                 "results" : "data"
            }
+
 # regions [/regions]
 
 'Get all regions'
@@ -99,4 +100,22 @@ This is a blank 'hello world' FeedHenry MBaaS. Use it as a starting point for bu
     + Body
            {
                 "results" : "data"
-           }           
+           }
+
+# rollupscores [/rollupscores]
+
+'Condense the scores for graphing'
+
+## rollupscores [POST]
+
++ Request (application/json)
+    + Body
+            {
+               "query": "NOTHING NEEDED"
+            }
+            
++ Response 200 (application/json)
+    +  Body
+           {
+               "results" : "data"
+           }
