@@ -5,7 +5,7 @@ var cors = require('cors');
 
 // list the endpoints which you want to make securable here
 var securableEndpoints;
-securableEndpoints = ['/hello', '/bettercallsaul', '/getquestions', '/regions'];
+securableEndpoints = ['/hello', '/bettercallsaul', '/getquestions', '/regions', '/downloadcsv'];
 
 var app = express();
 
@@ -28,6 +28,7 @@ app.use('/getquestions', require ('./lib/getquestions.js')());
 app.use('/verifyemail', require ('./lib/verifyemail.js')());
 app.use('/getallscores', require('./lib/getallscores.js')());
 app.use('/rollupscores', require('./lib/rollupscores.js')());
+app.use('/downloadcsv', require('./lib/downloadcsv.js')());
 app.use('/regions', require('./lib/regions.js')());
 
 // Important that this is last!
